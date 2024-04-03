@@ -16,11 +16,14 @@ CoverM offers the possibility to use two different aligners, [bwa-mem](https://g
 ## Let's get started
 - First let's clone this repository into your own working directory. To do so, open up a terminal window and type the following commands:
 ```
-$ cd ~/storage/userlab/{your_username_here}/
-$ git clone (ADD gitrepo linit)
-$ cd (ADD the name of the folder)
+$ cd /mnt/storage/userlab/{your_username_here}/
+$ git clone https://github.com/Bigelow-eSCG-tutorials/day2_recruitment.git
+$ cd day2_recruitment
 ```
-- [1_Metagenome_Recruitment_Setup.ipynb](add repo link): We will next go over how we downloaded the reads we will use for the course. Julia's work (see supplementary material of Pachiadaki et al. 2017) showed that -  regarding the estimation of relative abundance of genomes - mapping million reads provides comparible results with mapping larger metagenomes. For this reason, we are going to subsamples the genomes as we download them.
-- [2_CoverM.ipynb](include repo link): We will then run CoverM.
-- [3_Metagenome_recruitment_plotting.ipynb](add repo link): Finally, we will explore and visualize the results.
+
+Use the folder panel the panel on the left to access your local notebooks. Let's start by initiating the mapping. While this (step 2) is running, I will demonstrate how I downloaded the metagenomic samples we are using (please do not try to run this here; you can use it as guide to download metagenomes relevant to your research).
+
+- [1_Metagenome_Recruitment_Setup.ipynb](https://github.com/Bigelow-eSCG-tutorials/day2_recruitment/blob/main/1_Metagenome_Recruitment_Setup.ipynb): Commans we used to download the metagenomic reads we will use for the exercise. Julia's work (see supplementary material of Pachiadaki et al. 2017) showed that -  regarding the estimation of relative abundance of genomes - mapping million reads provides comparible results with mapping larger metagenomes. For this reason, we are going to subsamples the genomes as we download them.
+- [2_CoverM.ipynb](https://github.com/Bigelow-eSCG-tutorials/day2_recruitment/blob/main/2_CoverM.ipynb): Run mapping using CoverM.
+- [3_Metagenome_recruitment_plotting.ipynb](https://github.com/Bigelow-eSCG-tutorials/day2_recruitment/blob/main/3_Metagenome_recruitment_plotting.ipynb): Explore and visualize the results.
 
