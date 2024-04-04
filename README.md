@@ -5,7 +5,7 @@ Read recruitment or mapping is one of the most commonly used process in genome a
 In a nutshell short reads are aligned to a genomic reference sequence (many thanks to Meren for creating this animation)
 ![recruitment](https://github.com/Bigelow-SCG-Course/Day3AM_read_recruitment/blob/main/intro_images/01-metagenomic-read-recruitment-simple.gif)
 
-
+This task is not as trivial as it sounds. Meren has an insightfull ![blog](https://merenlab.org/2015/06/23/comparing-different-mapping-software/) on the issue. Julia and I have also worked on the benchmarking individual mapping tools (use to be in the Supplementary material in Pachiadaki et. al., 2017 but now disappeared). It is now uploaded here. 
 
 ## CoverM
 For this tutorial we will use [CoverM](https://github.com/wwood/CoverM), a pipeline that "aims to be a configurable, easy to use and fast DNA read coverage and relative abundance calculator focused on metagenomics applications". CoverM can calculate coverage of individual contigs or of genomes with `coverm genome` (the mode we will be using; detailed manual [here](https://wwood.github.io/CoverM/coverm-genome.html)). Calculating coverage by read mapping, its input can either be [BAM (Binary Alignemnt Mapping)](https://support.illumina.com/help/BS_App_RNASeq_Alignment_OLH_1000000006112/Content/Source/Informatics/BAM-Format.htm#) files sorted by reference, or raw reads and reference genomes in various formats.
@@ -14,7 +14,7 @@ CoverM offers the possibility to use two different aligners, [bwa-mem](https://g
 
 
 ## Let's get started
-- First let's clone this repository into your own working directory. To do so, open up a terminal window and type the following commands:
+- First let's clone this repository into your own working directory. To do so, open up a terminal window and navigate to your user lab space. Then clone the repo:
 ```
 $ cd /mnt/storage/userlab/{your_username_here}/
 $ git clone https://github.com/Bigelow-eSCG-tutorials/day2_recruitment.git
